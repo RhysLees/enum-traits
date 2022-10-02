@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rhyslees/enum-traits",
+    "description": "This is my package enum-traits",
     "keywords": [
-        ":vendor_name",
+        "RhysLees",
         "laravel",
-        ":package_slug"
+        "enum-traits"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rhyslees/enum-traits",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rhys Lees",
+            "email": "43909932+RhysLees@users.noreply.github.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "RhysLees\\EnumTraits\\": "src",
+            "RhysLees\\EnumTraits\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "RhysLees\\EnumTraits\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,15 +51,18 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "RhysLees\\EnumTraits\\EnumTraitsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "EnumTraits": "RhysLees\\EnumTraits\\Facades\\EnumTraits"
             }
         }
     },
