@@ -1,6 +1,6 @@
 <?php
 
-namespace RhysLees\EnumTraits;
+namespace RhysLees\EnumTraits\Traits;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
