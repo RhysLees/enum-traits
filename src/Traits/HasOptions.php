@@ -5,7 +5,7 @@ namespace RhysLees\EnumTraits;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
-class HasOptions
+trait HasOptions
 {
     /**
      * getOptions collection
