@@ -2,6 +2,10 @@
 
 All notable changes to `enum-traits` will be documented in this file.
 
+## 1.0.2 - 2022-10-12
+
+**Full Changelog**: https://github.com/RhysLees/enum-traits/compare/1.0.1...1.0.2
+
 ## 1.0.1 - 2022-10-11
 
 **Full Changelog**: https://github.com/RhysLees/enum-traits/compare/1.0.0...1.0.1
