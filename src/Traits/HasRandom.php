@@ -9,7 +9,6 @@ trait HasRandom
 {
     /**
      * random enum
-     *
      */
     public static function random()
     {
@@ -20,7 +19,6 @@ trait HasRandom
 
     /**
      * randomTitleCase enum
-     *
      */
     public static function randomTitleCase()
     {
