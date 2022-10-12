@@ -8,26 +8,24 @@ use Illuminate\Support\Str;
 trait HasRandom
 {
     /**
-     * random collection
+     * random enum
      *
-     * @return \Illuminate\Support\Collection
      */
-    public static function random(): Collection
+    public static function random()
     {
         return Collection::make(self::cases())->mapWithKeys(
             fn ($case) => [$case->value => Str::of($case->value)->replace('_', ' ')->value()]
-        );
+        )->random();
     }
 
     /**
-     * randomTitleCase collection
+     * randomTitleCase enum
      *
-     * @return \Illuminate\Support\Collection
      */
-    public static function randomTitleCase(): Collection
+    public static function randomTitleCase()
     {
         return Collection::make(self::cases())->mapWithKeys(
             fn ($case) => [$case->value => Str::of($case->value)->replace('_', ' ')->title()->value()]
-        );
+        )->random();
     }
 }
