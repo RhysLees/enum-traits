@@ -9,8 +9,6 @@ trait HasOptions
 {
     /**
      * options collection
-     *
-     * @return \Illuminate\Support\Collection
      */
     public static function options(): Collection
     {
@@ -21,8 +19,6 @@ trait HasOptions
 
     /**
      * optionsTitleCase collection
-     *
-     * @return \Illuminate\Support\Collection
      */
     public static function optionsTileCase(): Collection
     {
